@@ -16,7 +16,6 @@ return require('packer').startup(function(use)
   -- My plugins here
   use 'navarasu/onedark.nvim' -- Theme inspired by Atom
   use 'lewis6991/gitsigns.nvim'
-  use 'numToStr/Comment.nvim'
   use 'nvim-tree/nvim-tree.lua'
   use 'nvim-tree/nvim-web-devicons'
   use 'nvim-lualine/lualine.nvim'
