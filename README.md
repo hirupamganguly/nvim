@@ -5,7 +5,7 @@
 ![Alt text](https://user-images.githubusercontent.com/77056200/211403703-7fc0d1ee-b42a-4955-b60f-406433265a12.png)
 
 ## init.lua
-```
+``` lua
 -- Calling different configs from this init file
 require('rupam.settings')
 require('rupam.autocmd')
@@ -25,7 +25,7 @@ require('rupam.plugin_config.dap-config')
 
 ## plugins.lua
 
-```
+``` lua
 local ensure_packer = function()
   local fn = vim.fn
   local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
