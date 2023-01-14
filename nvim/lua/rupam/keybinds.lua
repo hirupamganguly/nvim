@@ -5,7 +5,7 @@ end
 map('n', '<leader>w', '<CMD>update<CR>')
 map('n', '<leader>W', '<CMD>wall<CR>')
 
--- Quit neovim
+-- Quit neovim tab
 map('n', '<C-Q>', '<CMD>q<CR>')
 
 -- Move to the next/previous buffer
@@ -15,8 +15,12 @@ map('n', '<C-]>', '<CMD>bn<CR>')
 -- Copying the vscode behaviour of making tab splits
 map('n', '<C-h>', '<CMD>vsplit<CR>')
 map('n', '<C-v>', '<CMD>split<CR>')
+
+-- Move the cursor 50 lines UP/DOWS
 map('n', '<C-Up>', '50k')
 map('n', '<C-Down>', '50j')
+
+-- Toggle NvimTree
 map('n', '<c-n>', ':NvimTreeFindFileToggle<CR>')
 
 -- Telescope Key Binding which already present in config 
@@ -27,10 +31,10 @@ map('n', '<c-n>', ':NvimTreeFindFileToggle<CR>')
 
 
 --DAP Key Binding which already present in config 
---vim.keymap.set('n', '<space>d', [[:NvimTreeToggle<CR> :lua require('dap').continue()<CR>]], {})
---vim.keymap.set('n', '<space>c', [[:NvimTreeToggle<CR> :lua require('dap').close()<CR>]], {})
---vim.keymap.set('n', '<space>r', [[:NvimTreeToggle<CR> :lua require('dap').repl.close()<CR>]], {})
---vim.keymap.set('n', '<s-b>', [[:lua require('dap').toggle_breakpoint()<CR>]], {})
+--vim.keymap.set('n', '<space>d', [[:NvimTreeToggle<CR> :lua require('dap').continue()<CR>]], {}) -- SPACE-d for Start DEBUG
+--vim.keymap.set('n', '<space>c', [[:NvimTreeToggle<CR> :lua require('dap').close()<CR>]], {}) -- SPACE-c for STOP DEBUG
+--vim.keymap.set('n', '<space>r', [[:NvimTreeToggle<CR> :lua require('dap').repl.close()<CR>]], {}) -- SPACE-r for STOP Repl
+--vim.keymap.set('n', '<s-b>', [[:lua require('dap').toggle_breakpoint()<CR>]], {}) -- SHIFT-b for Toggle Breakpoint
 
 
 --CTRL+s to save file instead of :w
