@@ -6,22 +6,22 @@ map('n', '<leader>w', '<CMD>update<CR>')
 map('n', '<leader>W', '<CMD>wall<CR>')
 
 -- Quit neovim tab
-map('n', '<C-Q>', '<CMD>q<CR>')
+map('n', '<C-Q>', '<CMD>q<CR>') -- CTRL + q
 
 -- Move to the next/previous buffer
 map('n', '<C-[>', '<CMD>bp<CR>')
 map('n', '<C-]>', '<CMD>bn<CR>')
 
 -- Copying the vscode behaviour of making tab splits
-map('n', '<C-h>', '<CMD>vsplit<CR>')
-map('n', '<C-v>', '<CMD>split<CR>')
+map('n', '<C-h>', '<CMD>vsplit<CR>') -- CTRL + h
+map('n', '<C-v>', '<CMD>split<CR>') -- CTRL + v
 
 -- Move the cursor 50 lines UP/DOWS
 map('n', '<C-Up>', '50k')
 map('n', '<C-Down>', '50j')
 
 -- Toggle NvimTree
-map('n', '<c-n>', ':NvimTreeFindFileToggle<CR>')
+map('n', '<c-n>', ':NvimTreeFindFileToggle<CR>') -- CTRL + n
 
 -- Telescope Key Binding which already present in config 
 --vim.keymap.set('n', '<c-p>', builtin.find_files, {})
@@ -38,10 +38,8 @@ map('n', '<c-n>', ':NvimTreeFindFileToggle<CR>')
 
 
 --CTRL+s to save file instead of :w
-map('n', '<C-s>', ':w<CR>')
+map('n', '<C-s>', ':w<CR>') 
 --CTRL+z to undo
-map('n','<C-z>', 'u')
+map('n','<C-z>', 'u') 
 --CTRL+x to redo
 map('n','<C-x>','<C-r>')
-
-

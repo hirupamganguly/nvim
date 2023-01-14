@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "/home/rupam/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
   },
-  ["gitsigns.nvim"] = {
-    loaded = true,
-    path = "/home/rupam/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
-    url = "https://github.com/lewis6991/gitsigns.nvim"
-  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/rupam/.local/share/nvim/site/pack/packer/start/lualine.nvim",

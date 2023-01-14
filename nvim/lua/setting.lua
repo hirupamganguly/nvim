@@ -15,7 +15,8 @@ o.scrolloff = 8
 o.number = true
 o.numberwidth = 5
 o.relativenumber = false
-o.signcolumn = 'no'
+o.signcolumn = 'yes:1'
+
 o.cursorline = true
 
 -- Better editing experience
@@ -59,6 +60,3 @@ o.splitkeep = 'screen'
 -- Map <leader> to space
 g.mapleader = ' '
 g.maplocalleader = ' '
-
--- Color Scheme
-vim.cmd [[colorscheme onedark]]
