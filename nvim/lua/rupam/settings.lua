@@ -1,14 +1,8 @@
 local g = vim.g
 local o = vim.o
 
--- cmd('syntax on')
--- vim.api.nvim_command('filetype plugin indent on')
 
 o.termguicolors = true
--- o.background = 'dark'
-
--- Do not save when switching buffers
--- o.hidden = true
 
 -- Decrease update time
 o.timeoutlen = 500
@@ -26,8 +20,6 @@ o.cursorline = true
 
 -- Better editing experience
 o.expandtab = true
--- o.smarttab = true
--- o.cindent = true
 o.autoindent = true
 o.wrap = true
 o.textwidth = 300
@@ -52,7 +44,7 @@ o.undofile = true
 o.swapfile = false
 
 -- Remember 50 items in commandline history
-o.history = 50
+o.history = 500
 
 -- Better buffer splitting
 o.splitright = true
