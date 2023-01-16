@@ -11,3 +11,7 @@ require('plugin_configs.bufferline-config')
 require('plugin_configs.mason-config')
 require('plugin_configs.gopls-config')
 require('plugin_configs.dap-config')
+require('plugin_configs.code-completion-config')
+require('plugin_configs.auto-bracket-pair')
+require('plugin_configs.auto-indent-config')
+

@@ -34,6 +34,26 @@ use { -- Go lang support for NeoVim
 }
 use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} } -- Debug UI
 
+-- AUTO COMPLETION
+-- Hrsh7th Code Completion Suite
+use 'hrsh7th/nvim-cmp' 
+use 'hrsh7th/cmp-nvim-lsp'
+use 'hrsh7th/cmp-nvim-lua'
+use 'hrsh7th/cmp-nvim-lsp-signature-help'
+use 'hrsh7th/cmp-vsnip'                             
+use 'hrsh7th/cmp-path'                              
+use 'hrsh7th/cmp-buffer'                            
+use 'hrsh7th/vim-vsnip'
+
+-- This plugin adds indentation guides to all lines
+use "lukas-reineke/indent-blankline.nvim"
+
+-- A super powerful autopair plugin
+use "windwp/nvim-autopairs"
+
+-- Git Fugitive
+use 'tpope/vim-fugitive'
+ 
 -- Automatically set up your configuration after cloning packer.nvim
 -- Put this at the end after all plugins
 if packer_bootstrap then
