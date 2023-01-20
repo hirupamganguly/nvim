@@ -6,8 +6,6 @@
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/xdskv1R-x7w/0.jpg)](https://www.youtube.com/watch?v=xdskv1R-x7w)
 
-## Screenshot
-![Alt text](https://user-images.githubusercontent.com/77056200/211403703-7fc0d1ee-b42a-4955-b60f-406433265a12.png)
 
 ## init.lua
 ``` lua
