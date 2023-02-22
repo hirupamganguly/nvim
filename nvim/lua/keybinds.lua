@@ -1,6 +1,7 @@
 local function map(m, k, v)
     vim.keymap.set(m, k, v, { silent = true })
 end
+
 -- Quickly save the current buffer or all buffers
 map('n', '<leader>w', '<CMD>update<CR>')
 map('n', '<leader>W', '<CMD>wall<CR>')
@@ -15,7 +16,6 @@ map('n', '<C-]>', '<CMD>bn<CR>')
 -- Copying the vscode behaviour of making tab splits
 map('n', '<C-h>', '<CMD>vsplit<CR>') -- CTRL + h
 map('n', '<C-v>', '<CMD>split<CR>') -- CTRL + v
-
 -- Move the cursor 50 lines UP/DOWS
 map('n', '<C-Up>', '50k')
 map('n', '<C-Down>', '50j')
@@ -43,3 +43,19 @@ map('n', '<C-s>', ':w<CR>')
 map('n','<C-z>', 'u') 
 --CTRL+x to redo
 map('n','<C-x>','<C-r>')
+-- CTRL+v to Paste in InsertMode
+map('i','<C-v>','<C-r>*')
+
+--:lua vim.lsp.buf.definition()
+-- lsp.buf.definition in InsertMode
+vim.keymap.set('n', '<C-LeftMouse>', function()
+ vim.cmd [[
+  :lua vim.lsp.buf.definition()
+]]
+end, { expr = true })
+-- SAVE file in InsertMode
+vim.keymap.set('i', '<C-d>', function()
+ vim.cmd [[
+  :w
+]]
+end, { expr = true })
